@@ -5,17 +5,6 @@ const port = 3000
 const app = express()
 app.use(express.json())
 
-
-
-
-
-
-
-
-
-
-
-
 const users = []
 
 app.get('/users', (request, response) => {
@@ -64,10 +53,6 @@ app.delete('/users:id', (request, response) => {
 
     return response.status(204).json()
 })
-
-
-
-
 
 app.listen(port, () => {
     console.log('Server started on port ${port}')
